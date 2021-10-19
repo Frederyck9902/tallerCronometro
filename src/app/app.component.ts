@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proyecto005';
+  mensaje = '';
+
+  actualizar(t: string){
+    this.mensaje = t + '(se actualiza cada 10 segundos)';
+  }
 }
